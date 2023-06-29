@@ -1,0 +1,123 @@
+/* Start header CSS */
+
+#title .main-poster{
+    text-align: center;
+    max-width: 860px;
+    margin-top: 77px;
+    margin-bottom: 44px;
+}
+/* Start content CSS */
+
+#content {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+#content .line{
+    display: block;
+    height: 1.5px;
+    width: 640px;
+    background-color: #000000;
+}
+
+#content .title-content {
+    margin-top: 68px;
+    margin-bottom: 47px;
+
+    font-family: NewYorkExtra;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+}
+
+#content .contain-poster{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 860px;
+    position: relative;
+    justify-content: center;
+}
+
+#content .contain-poster [class^="poster"]{
+    margin: 0 15px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#content p{
+    max-width: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: 530;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+@media (max-width: 46.1875em){
+    #main{
+        overflow-x: hidden !important;
+    }
+    #header{
+        min-height: 65px;
+        position: relative;
+    }
+    #header .logo img{
+        max-width: 217px;
+        max-height: 20px;
+        position: absolute;
+        bottom: 8px;
+        left: -35px;
+    }
+    #header .nav{
+        display: none;
+    }
+
+    #header .menu-mobile{
+        display: block;
+        position: relative;
+        top: 23px !important;
+        left: 325px !important;
+        font-size: 20px !important;
+    }
+    #header .menu-mobile:hover{
+        opacity: 0.5;
+    }
+
+    #title .main-poster img{
+        max-width: 375px;
+        max-height: 235px;
+    }
+    
+    #footer .contain-label {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Reponsive mobile + tablet*/
+@media (max-width: 63.9375em){
+    #main{
+        overflow-x: hidden !important;
+    }
+    #header .menu-mobile{
+        display: block;
+        position: relative;
+        top: -80px;
+        left: 690px;
+        font-size: 30px;
+    }
+    #header .menu-mobile:hover{
+        opacity: 0.5;
+    }
+}
+

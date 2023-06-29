@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #e9e9e9;
+}
+
+.icon {
+    background-color: #2d383e;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.main-header {
+    background-color: #212121;
+    padding: 15px 16px;
+}
+
+.today-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.today:hover {
+    opacity: 0.85;
+}
+
+
+/* CALENDAR */
+.calendar-container {
+    background-color: #292929;
+    border-bottom: 2px solid #5f6774;
+    position: relative;
+}
+
+.calendar-container.hide{
+    display: none;
+}
+
+.calendar-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 8px;
+}
+
+
+.calendar-container [class^='current-'] {
+    flex-grow: 1;
+    padding: 12px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    gap: 4px;
+}
+
+.nav .icon {
+    height: 100%;
+    width: 32px;
+    background-color: transparent;
+}
+
+.nav .icon:hover {
+    background-color: #374151;
+}
+
+.calendar-content {
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+
+.month-picking,
+.year-picking {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #292929;
+    display: none;
+}
+
+.month-picking.show,
+.year-picking.show {
+    display: block;
+    z-index: 9999;
+}
+
+.year-picking .current-year-period {
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.year-picking .current-year-period:hover {
+    background-color: transparent;
+}
+
+
+.months,
+.years {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 64px);
+    justify-items: center;
+    align-items: center;
+}
+
+.months .month,
+.years .year {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.months .month.active,
+.years .year.active {
+    color: #0c1f29;
+    background-color: #4cc2ff;
+}
+
+.months .month:not(.active):hover,
+.years .year:not(.active):hover {
+    background-color: #374151;
+}
+
+.list-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    font-weight: 700;
+    padding: 12px 0;
+    position: relative;
+    z-index: 99;
+    background-color: #292929;
+}
+
+.list-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.date {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.date.active {
+    color: #0c1f29;
+    background-color: #4cc2ff;
+}
+
+.date.active:hover {
+    opacity: 0.95;
+}
+
+.date:not(.active):hover,
+.calendar-container [class^='current-']:hover {
+    background-color: #374151;
+    opacity: 0.9;
+}
+
+.date-offset,
+.month-offset,
+.year-offset {
+    opacity: 0.5;
+}
+
+
+/* TIME FOCUS */
+.time-focus-container {
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 8px 12px;
+}
+
+.change-time-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.default {
+    font-weight: 700;
+}
+
+.btn-focus {
+    background-color: #2d383e;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.month-content {
+    overflow: hidden;
+}
+
+.year-content {
+    overflow: hidden;
+}
+.counter{
+    margin-top: 20px;
+    color: #000; 
+    text-align: center;
+}

@@ -1,0 +1,504 @@
+/* Start header CSS */
+#title .main-poster{
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Start content CSS */
+#content {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#content .line{
+    height: 2px;
+    max-width: 640px;
+    background-color: #000000;
+}
+
+#content .status{
+    margin-top: 30px
+}
+
+#content .status .infor{
+    display: flex;
+    justify-content: center;
+}
+#content .status .infor .avatar{
+    margin-left: -160px;
+    margin-right: 20px;
+}
+
+#content .status .infor .avatar img{
+    border-radius: 50%;
+}
+
+#content .status .infor .name-date{
+    margin-right: 100px;
+}
+#content .status .infor .name-date .full-name {
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#content .status .infor .socials{
+    position: relative;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#content .status .mobile-socials{
+    display: none;
+}
+
+
+#content .status .infor .socials .facebook,
+#content .status .infor .socials .twitter{
+    position: relative;
+    right: -180px;
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    padding-left: 25px;
+    padding-right: 25px;
+    max-height: 40px;
+    line-height: 40px;
+}
+
+#content .status .infor .socials .facebook{
+    margin-right: -1px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#content .status .infor .socials .twitter{
+    border-radius: 0px 4px 4px 0px;
+}
+
+.status [class^="mobile"]{
+    display: none;
+}
+
+.status p{
+    display: block;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: NewYorkSmall;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 170%;
+}
+.status .heading-status{
+    max-width: 640px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.status .img-stt{
+    display: block;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.status .note{
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+
+    max-width: 521px;
+    display: block;
+    margin-top: 15px;
+}
+
+.status ul{
+    display: block;
+    max-width: 580px;
+    font-family: NewYorkSmall;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 170%;
+}
+
+.share-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    
+    max-width: 640px;
+    margin-top: 50px;
+       
+}
+.share-btn .share-fb,
+.share-btn .share-tt{
+    width: 320px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.share-btn .share-fb{
+    border-right: 1px solid #EAEAEA;
+}
+.share-btn span{
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 20px;
+}
+.status .tags{
+    max-width: 640px; 
+
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #0C0C0C;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.status .tags a{
+    color: #0C0C0C;
+}
+
+.tags .dashed-line{
+    height: 1px;
+    border: 1px dashed #000000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.introduce{
+    max-width: 640px;
+    display: flex;
+    flex-direction: row;
+}
+.introduce img{
+    border-radius: 50%;
+}
+.introduce .introduce-content{
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.05em;
+
+    margin-left: 30px;
+}
+.introduce .introduce-content span{
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+#content .list .list-line{
+    max-width: 100%;
+    border-top: 2px solid #000000;
+    margin-top: 140px;
+}
+.list .list-line img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 32px;
+}
+.list .list-heading{
+    font-family: NewYorkExtra;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+
+    text-align: center;
+
+    color: #000000;
+
+}
+.list .list-poster{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1245px;
+    margin-left: 73px;
+    position: relative;
+    justify-content: center;
+}
+.list .list-poster [class^="poster"]{
+    max-width: 260px;
+    margin-left: 80px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.list .list-poster p{
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    position: relative;
+    left: 21px;
+}
+.sign-up{
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-top: 12px solid #000000;
+    max-width: 640px;
+    min-height: 315px;
+    margin-top: 50px;
+    margin-left: 142px;
+    margin-bottom: 100px;
+}
+.sign-up .sign-up-heading{
+    text-align: center;
+    font-family: NewYorkExtra;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 28px;
+    margin-top: 50px;
+}
+.sign-up .sign-up-para{
+    text-align: center;
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.form input{
+    display: block;
+    min-height: 55px;
+    width: 400px;
+
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.form p{
+    display: block;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 14px 10px 15px 10px;
+    position: relative;
+    top: 7.5px;
+    left: -1px !important;
+
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Reponsive mobile */
+@media (max-width: 46.1875em){
+    #main{
+        overflow-x: hidden !important;
+    }
+    #header{
+        min-height: 65px;
+        position: relative;
+    }
+    #header .logo img{
+        max-width: 217px;
+        max-height: 20px;
+        position: absolute;
+        bottom: 8px;
+        left: -35px;
+    }
+    #header .nav{
+        display: none;
+    }
+
+    #header .menu-mobile{
+        display: block;
+        position: relative;
+        top: 23px !important;
+        left: 325px !important;
+        font-size: 20px !important;
+    }
+    
+    #header .menu-mobile:hover{
+        opacity: 0.5;
+    }
+
+    #title .main-poster img{
+        max-width: 375px;
+        max-height: 235px;
+    }
+    #content{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    #content .status .infor .avatar{
+        margin-left: 0px;
+    }
+    #content .status .infor .name-date .date{
+        min-width: 170px;
+    }
+
+    #content .status .infor .socials{
+        display: none;
+    }
+
+    #content .status .mobile-socials{
+        display: flex;
+        flex-wrap: row;
+        margin-top: 20px;
+        justify-content: row;
+        align-items: center;
+        background-color: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        height: 60px;
+        
+    }
+    #content .status .mobile-socials .facebook{
+        padding-left: 55px;
+        padding-right: 55px;
+        border-right: 1px solid #EAEAEA;
+        line-height: 60px;
+    }
+    #content .status .mobile-socials .twitter{
+        border-right: 1px solid #EAEAEA;
+        line-height: 60px;
+        position: absolute;
+        left: 180px;
+        padding-right: 50px;
+    }
+    #content .status .mobile-socials .phone{
+        position: absolute;
+        left: 300px;
+    }
+    
+    .status p{
+        display: none;
+    }
+    .status [class^="mobile"]{
+        display: block;
+    }
+    .status mobile2{
+        margin-top: 40px;
+    }
+
+    .status ul{
+        display: none;
+    }
+    .share-btn{
+        display: none;
+    }
+    .introduce img{
+        width: 71.25px;
+        height: 71.25px;
+    }
+
+    .list .list-poster{
+        margin-right: 197px;
+    }
+    .list .list-poster p{
+        margin-left: 1px;
+    }
+    
+    .list .list-poster .sign-up{
+        display: block;
+        max-width: 380px;
+        margin-left: 121px;
+    }
+
+    .form{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .form p{
+        width: 100%;
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 14px;
+    }
+
+    #footer .contain-label {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* Reponsive mobile + tablet*/
+@media (max-width: 63.9375em){
+    #main{
+        overflow-x: hidden !important;
+    }
+    #header .menu-mobile{
+        display: block;
+        position: relative;
+        top: -80px;
+        left: 690px;
+        font-size: 30px;
+    }
+    #header .menu-mobile:hover{
+        opacity: 0.5;
+    }
+}
+
+

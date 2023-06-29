@@ -1,0 +1,140 @@
+/* Start header CSS */
+#header{
+    min-height: 350px;
+    width: 100%;
+    background-color: #FFD900;
+    position: relative;
+}
+#header .time{
+    font-family: SFMono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    top: 65px;
+    left: 140px;
+}
+#header .title{
+    font-family: NewYorkExtra;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 239px;
+    position: absolute;
+    top: 79px;
+    left: 131px;
+}
+
+#content {
+    margin-top: 100px;
+    position: relative;
+    padding-bottom: 100px;
+}
+#content .para1,
+#content .para2,
+#content .contain-para3{
+    margin-left: 131px;
+    max-width: 840px;
+}
+
+#content .para2{
+    margin-top: 100px;
+}
+
+#content .para1 h1,
+#content .para2 h1{
+    font-family: NewYorkExtra;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+}
+#content .para1 p,
+#content .para2 p{
+    display: block;
+    border-left: 5px solid #000000;
+    padding-left: 30px;
+    margin-top: 20px;
+
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#content .contain-para3{
+    margin-top: 100px;
+}
+#content .contain-para3 .main-h{
+    font-family: NewYorkExtra;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+#content .contain-para3 .content-para3{
+    border-left: 5px solid #000000;
+    padding-left: 30px;    
+}
+
+
+#content .contain-para3 .content-para3 p{
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+#content .contain-para3 .content-para3 img{
+    margin-top: 50px;
+}
+
+/* Reponsive mobile */
+@media (max-width: 46.1875em){
+    #main{
+        overflow-x: hidden !important;
+    }
+    #header{
+        min-height: 200px;
+        position: relative;
+    }
+    #header .time{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #header .title{
+        font-size: 90px;
+        position: absolute;
+        top: -20px;
+        left: 15px;
+    }
+    #content{
+        position: relative;
+        top: -50px;
+        left: -100px;
+    }
+
+    #content .content-para3{
+        max-width: 290px;
+    }
+
+    #content img{
+        max-width: 290px;
+        max-height: 235px;
+    }
+    #content .content-para3 p{
+        font-size: 17px !important;
+    }    
+}
+
+/* Reponsive mobile + tablet*/
+@media (max-width: 63.9375em){
+    #main{
+        overflow-x: hidden !important;
+    }
+}
